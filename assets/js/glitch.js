@@ -320,7 +320,7 @@
 		cycle:3,
 		delay:150,
 		compression:0.8,
-		responsive:false,
+		responsive:true,
 	};
 
 }( jQuery ));
