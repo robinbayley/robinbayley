@@ -516,10 +516,6 @@ body {
 	min-height:100vh;
 	background:#fff;
 }
-section.section-1 {
-	padding-top:24vh;
-	background:#444 url(../images/noise_bg.png) repeat center center fixed;
-}
 img {
 	/*
 		fluid images.
@@ -529,86 +525,17 @@ img {
 	margin:0;
 	padding:0;
 }
-ul {
-	list-style-type:none;
-}
 a {
+	/*
+		default link styles.
+	*/
 	text-decoration:none;
-}
-
-#site-title:before {
-	content:"> ";
-}
-header {
-	max-width:982px;
-	margin:14vh auto;
-	position:sticky;
-	top:0;
-	display:none;
-}
-header * {
-	display:inline-block;
-	display:none;
-	font-size:21px;
-	margin:0;
-}
-header h1 {
-	text-transform:uppercase;
-	padding:14px;
-	background: -moz-linear-gradient(top, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0.8) 100%);
-	background: -webkit-linear-gradient(top, rgba(255,255,255,0.8) 0%,rgba(255,255,255,0.8) 100%);
-	background: linear-gradient(to bottom, rgba(255,255,255,0.8) 0%,rgba(255,255,255,0.8) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ccffffff', endColorstr='#ccffffff',GradientType=0 );
-}
-nav#navigation > ul li {
-	background: -moz-linear-gradient(top, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0.8) 100%);
-	background: -webkit-linear-gradient(top, rgba(255,255,255,0.8) 0%,rgba(255,255,255,0.8) 100%);
-	background: linear-gradient(to bottom, rgba(255,255,255,0.8) 0%,rgba(255,255,255,0.8) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ccffffff', endColorstr='#ccffffff',GradientType=0 );
-}
-nav#navigation > ul li:hover {
-}
-nav#navigation > ul li a {
-	padding:14px;
-	transition: all 0.4s ease;
-}
-nav#navigation > ul li:first-child a {
-}
-nav#navigation > ul li:last-child a {
-}
-nav#navigation > ul li a:hover {
-	background:#222;
-	color:#fff;
-}
-nav#navigation > ul > li > a span:before {
-	content:"☰";
-}
-nav#navigation > ul > li > a:active span:before {
-	content:"☷";
-}
-footer {
-	background:#fff;
-	display:none;
-}
-footer {
-	max-width:992px;
-	margin:0 auto;
-}
-footer * {
-	display:inline-block;
-	font-size:21px;
-}
-footer p {
-	text-transform:uppercase;
-	border-right:2px solid #222;
-	padding:0 21px 0 21px;
-	margin: 14vh 14px 0 0;
 }
 body > section > ul,
 body > section > ol {
 	/*
 		remove default formatting
-		on page level lists, so that
+		on section lists, so that
 		they can be used for layout.
 	*/
 	list-style-type:none;
@@ -618,6 +545,17 @@ body > section > ol {
 /**
  * 4.0 - Layout
  */
+header {
+	position:absolute;
+}
+header span {
+	background:#000;
+	color:#fff;
+	margin:0 0 0 10px;
+	padding:10px;
+	font-weight:normal;
+	font-size:32px;
+}
 body > section {
 	/*
 	min-height:100vh;
@@ -626,6 +564,10 @@ body > section {
 	/*
 	background:#000 url(../assets/images/dot_matrix_overlay_invert.png) repeat center center fixed;
 	*/
+}
+section.section-1 {
+	padding-top:24vh;
+	background:#444 url(../images/noise_bg.png) repeat center center fixed;
 }
 article {
 	/*
