@@ -514,7 +514,11 @@ body {
 	*/
 	width:100%;
 	min-height:100vh;
-	background:#000 url(../images/dmbg.jpg) repeat center center fixed;
+	background:#fff;
+}
+section.section-1 {
+	padding-top:24vh;
+	background:#444 url(../images/noise_bg.png) repeat center center fixed;
 }
 img {
 	/*
@@ -540,9 +544,11 @@ header {
 	margin:14vh auto;
 	position:sticky;
 	top:0;
+	display:none;
 }
 header * {
 	display:inline-block;
+	display:none;
 	font-size:21px;
 	margin:0;
 }
@@ -610,7 +616,7 @@ body > section > ol {
 
 
 /**
- * 3.0 - Layout
+ * 4.0 - Layout
  */
 body > section {
 	/*
