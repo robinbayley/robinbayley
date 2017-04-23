@@ -866,13 +866,13 @@ img#pc {
 @media (min-width:1025px) {
 	/* big landscape tablets, laptops, and desktops */
 	img#pc {
-		width:1002px;
+		width:752px;
 	}
 	.glitch {
-		width:920px;
-		height:520px;
-		top:41px;
-		left:41px;
+		width:690px;
+		height:390px;
+		top:31px;
+		left:31px;
 	}
 }
 @media (min-width:1281px) { /* hi-res laptops and desktops */ }
