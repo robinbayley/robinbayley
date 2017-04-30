@@ -889,8 +889,11 @@ img#pc {
 	bottom:50px;
 	height:auto;
 	z-index:-1;
-	opacity:0;
 	list-style-type:none;
+
+}
+.boo li {
+	opacity:0;
 	transition: all 0.6s ease;
 }
 .boo li:nth-child(2) {
@@ -911,7 +914,7 @@ img#pc {
 	opacity:0;
 	pointer-events: none;
 }
-.boo:target {
+.boo:target li {
 	opacity:1;
 }
 .boo:target + div.boo-modal-bg {
@@ -1023,10 +1026,10 @@ img#pc {
  		left:4px;
  	}
 	.boo {
-		top:10px;
-		right:10px;
-		left:10px;
-		bottom:50px;
+		top:3px;
+		right:3px;
+		left:3px;
+		bottom:10px;
 		height:auto;
 	}
 }
@@ -1040,6 +1043,13 @@ img#pc {
 		height:131px;
 		top:10.25px;
 		left:10.25px;
+	}
+	.boo {
+		top:10px;
+		right:10px;
+		left:10px;
+		bottom:20px;
+		height:auto;
 	}
 }
 @media (min-width:481px)	{
