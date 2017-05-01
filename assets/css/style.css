@@ -863,7 +863,6 @@ img#pc {
 	margin:0 auto;
 	position:relative:
 	z-index:10;
-	pointer-events:none;
 }
 .glitch {
 	display:table-cell;
@@ -897,10 +896,7 @@ img#pc {
 	transition: all 0.6s ease;
 }
 .boo li:nth-child(2) {
-	position:absolute;
-	top:0;
-	right:0;
-	z-index:999;
+
 }
 .boo-modal-bg {
 	transition: all 0.6s ease;
@@ -914,10 +910,28 @@ img#pc {
 	opacity:0;
 	pointer-events: none;
 }
+#close {
+	opacity:0;
+	transition: all 0.6s ease;
+	position:fixed;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	z-index:-9999;
+	pointer-events:none;
+}
+#close svg path {
+	fill:#fff;
+}
 .boo:target li {
 	opacity:1;
 }
-.boo:target + div.boo-modal-bg {
+.boo:target a#close {
+	opacity:1;
+	pointer-events:auto;
+}
+.boo:target ~ div.boo-modal-bg {
 	opacity:1;
 }
 /**
